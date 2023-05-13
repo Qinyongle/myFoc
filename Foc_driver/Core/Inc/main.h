@@ -57,12 +57,13 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define TIM_1_8_PERIOD_CLOCKS 3500
+#define M0_CS_Pin GPIO_PIN_13
+#define M0_CS_GPIO_Port GPIOC
 #define M0_SO1_Pin GPIO_PIN_0
 #define M0_SO1_GPIO_Port GPIOC
 #define M0_SO2_Pin GPIO_PIN_1
 #define M0_SO2_GPIO_Port GPIOC
-#define M0_CS_Pin GPIO_PIN_5
-#define M0_CS_GPIO_Port GPIOC
 #define EN_GATE_Pin GPIO_PIN_12
 #define EN_GATE_GPIO_Port GPIOB
 #define M0_AL_Pin GPIO_PIN_13
@@ -83,8 +84,11 @@ void Error_Handler(void);
 #define M0_MISO_GPIO_Port GPIOC
 #define M0_MOSI_Pin GPIO_PIN_12
 #define M0_MOSI_GPIO_Port GPIOC
-/* USER CODE BEGIN Private defines */
+#define nFalut_Pin GPIO_PIN_2
+#define nFalut_GPIO_Port GPIOD
 
+/* USER CODE BEGIN Private defines */
+#define TIM_TIME_BASE TIM14
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
